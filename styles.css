@@ -1,0 +1,225 @@
+/*============ CSS RESET ==============*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, strong, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*============ END OF CSS RESET ==============*/
+
+
+/*====================FONTS====================*/
+
+
+@font-face{
+    font-family: "Playfair";
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: "Dosis";
+    src: url(../fonts/Dosis-VariableFont_wght.ttf);
+}
+
+
+/*==================END OF FONTS======================*/
+
+body 
+{
+    font-family: "Playfair";
+    background-color: black;
+    background-image: url(BackgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+nav
+{
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    height: 45px;
+    background: rgba(36, 27, 27 ,.5);
+    font-size: 0;
+    display: inline-flex;
+    justify-content: space-around;
+}
+nav a
+{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    flex-basis: 20%;
+}
+
+nav .current
+{
+    height: 100%;
+    top: 0;
+    background: rgb(29, 39, 37);
+    width: 100px;
+    border-radius: 8px;
+}
+@media all and ( min-width: 1080px)
+{
+    .container
+    {
+        border-radius: 8px;
+        width: 70%;
+        overflow: hidden;
+        margin: auto;
+        padding: 20px;
+        height: auto;
+        margin-right: 10%;   
+        margin-top: 100px;
+        background: rgba(156, 151, 151, 0.5);
+    }
+}
+@media all and (min-width: 1px) and (max-width: 1079px)
+{
+    .container
+    {
+        border-radius: 8px;
+        width: 50%;
+        overflow: hidden;
+        margin: auto;
+        padding: 20px;
+        height: auto;
+        margin-right: 10%;   
+        margin-top: 100px;
+        background: rgba(156, 151, 151, 0.5);
+    }
+}
+
+
+    .sidebar
+    {
+        position: fixed;
+        width: 15%;
+        top: 100px;
+        left: 0;
+        height: auto;
+        background: rgba(36, 27, 27 ,.5);
+        font-size: 90%;
+    }
+    .sidebar a
+    {
+        display: block;
+        padding: 10px 20px;
+        color: rgb(250, 229, 229);
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
+    .sidebar a:hover
+    {
+        margin-left: 20px;
+        transition: 0.4s;
+        color: #fff;
+    }
+    .blogName
+    {
+        padding: 10px 20px;
+        color: rgb(250, 229, 229);
+        font-size: 150%;
+        font-weight: bold;
+    }
+    .current
+    {
+        height: 100%;
+        top: 0;
+        background: rgb(29, 39, 37);
+        width: 100px;
+        border-radius: 8px;
+    }
+
+
+.card
+{
+    background: #DCDCDC;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    height: auto;
+    box-sizing: border-box;
+    border: black;
+    border-width: 100px;
+    border-radius: 8px;
+}
+.card a
+{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.card-title
+{
+    font-size: 180%;
+    text-align: center;
+}
+.card-text
+{
+    font-family: Georgia, Helvetica, Georgia, Verdana, Arial, Courier, Verdana;
+    line-height: 120%;
+    padding-top: 15px;
+    font-size: 100%;
+}
+.heading
+{
+    font-size: 200%;
+    text-align: center;
+}
+
+footer 
+{
+    padding-top: 80px;
+    height: auto;
+    text-align: center; 
+}
